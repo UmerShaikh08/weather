@@ -158,7 +158,7 @@ searchForm.addEventListener("submit",(e)=>{
 })
 
 async function fetchSearchWeatherInfo(city){
-
+    notFound.classList.remove("active");
     userInfo.classList.remove("active");
     grantAccess.classList.remove("active");
     loading.classList.add("active")
