@@ -6,10 +6,8 @@
 }
 
 
-body{
-    max-width: 100vw;
-    max-height: 100vh;
-}
+
+
 :root{
     --colorDark1: #11204E;
     --colorDark2: #3F72AF;
@@ -167,9 +165,10 @@ h1{
 
 /* user info container  */
 .user-info-container{
-  
+    width: 90%;
+    max-width: 1000px;
     display: flex;
-    justify-content:center;
+    margin: 0 auto;
     text-align:center;
     flex-direction:column;
     margin-top:3.5rem;
@@ -178,6 +177,7 @@ h1{
 
 
 .user-info-container .location{
+    
     display:flex;
     flex-direction: row;
     justify-content:center;
@@ -213,26 +213,51 @@ h1{
     font-weight:600;
 }
 
+
+@media (max-width: 767px){
+    .weather-details{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
 .weather-details{
-    display:grid;
+
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
     justify-content: center;
-    grid-template-columns: 200px 200px 200px;
-    margin-top:1.5rem;
-    gap:1rem;
+    flex-wrap: wrap;
+    gap: 10px 20px;
     
 }
+
+
+
 
 .weather-details .card{
 
-    background-color:rgba(240, 240, 240, 0.4);
-    border-radius:7px;
-    padding:1rem;
-    font-size:1.5rem;
-    font-weight: 200;
+    
+    width: 60%;
+    max-width: 200px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px 0;
     
     
 }
+@media (max-width: 767px){
+    .card{
+        width: 100%;
+    }
 
+}
 
 
 .not-found{
