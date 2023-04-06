@@ -1,13 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: 'Merriweather Sans', sans-serif;
 }
 
-html{
-    /* display: block; */
-}
 
 body{
     max-width: 100vw;
