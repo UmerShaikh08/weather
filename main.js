@@ -27,13 +27,12 @@ function switchTab(clickedTab) {
             notFound.classList.remove("active");
             userInfo.classList.remove("active");
             grantAccess.classList.remove("active");
-            console.log("seach form")
+
             searchForm.classList.add("active");
         }
         else{
             notFound.classList.remove("active");
             searchForm.classList.remove("active");
-            console.log("umer")
             userInfo.classList.remove("active")
             getFromSessionStorage();
         }
@@ -57,7 +56,7 @@ function getFromSessionStorage(){
 
     if(!Localcoordinates){
         grantAccess.classList.add("active");
-        console.log("grant acces not");
+        
     }
     else{
         
@@ -78,7 +77,7 @@ async function  fetchUserWeatherInfo (coordinates){
         
         const response =  await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`);
         const data =await response.json();
-        console.log(data);
+
 
         loading.classList.remove("active")
         userInfo.classList.add("active");
@@ -86,7 +85,7 @@ async function  fetchUserWeatherInfo (coordinates){
 
     } catch (error) {
         loading.classList.remove("active")
-        console.log(error);
+      
     }
 
 }

@@ -75,7 +75,6 @@ h1{
 .Grant-para{
     margin-top: 1rem;
     font-size: 0.85rem;
-    /* b  */
     letter-spacing: 0.75px;
 }
 
@@ -214,13 +213,9 @@ h1{
 }
 
 
-@media (max-width: 767px){
-    .weather-details{
-        flex-direction: column;
-        align-items: center;
-    }
 
-}
+
+
 .weather-details{
 
     width: 90%;
@@ -233,13 +228,21 @@ h1{
     
 }
 
+@media (max-width: 767px){
+    .weather-details{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
 
 
 
-.weather-details .card{
+
+.card{
 
     
-    width: 60%;
+    width: 30%;
     max-width: 200px;
     background-color: rgba(219, 226, 239, 0.5);
     border-radius: 5px;
@@ -252,12 +255,15 @@ h1{
     
     
 }
+
 @media (max-width: 767px){
     .card{
         width: 100%;
     }
 
 }
+
+
 
 
 .not-found{
